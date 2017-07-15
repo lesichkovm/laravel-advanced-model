@@ -2,9 +2,9 @@
 An advanced model for Laravel, with out-of-the-box support for CamelCase field names, and enhanced primary key support - human friendly date based unique IDs, and UUIDs.
 
 ## Background ##
-1. By default Laravel uses snake_case field names for tables, which are not as readable, and slighly larger.
+1. By default Laravel uses snake_case field names for tables, which are not as readable, and few characters larger compared to UpperCamelCase (more at https://en.wikipedia.org/wiki/Camel_case).
 
-This class fixes this shortcoming, and the default is CamelCase. This changes the default Laravel names to:
+This class fixes this shortcoming, and the default is UpperCamelCase. This changes the default Laravel names to:
 
 ```
 id - Id
