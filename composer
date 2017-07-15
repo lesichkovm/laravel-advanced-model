@@ -1,0 +1,23 @@
+{
+    "name": "lesichkovm/laravel-advanced-model",
+    "description": "Advanced model class for Laravel",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["model", "advanced", "laravel", "php", "lesichkov"],    
+    "homepage": "http://github.com/lesichkovm/laravel-advanced-route",
+    "license": "commercial",
+    "authors": [
+        {
+            "name": "Milan Lesichkov",
+            "email": "lesichkovm@gmail.com",
+            "homepage": "http://lesichkov.co.uk",
+            "role": "Lead Developer"
+        }
+    ],
+    "autoload": {
+        "files": ["src/AdvancedModel.php"]
+    },
+     "require": {
+        "Laravel/framework": "5.*"
+    }
+}
