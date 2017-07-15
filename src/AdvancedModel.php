@@ -28,14 +28,16 @@ class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
     public static function boot() {
         parent::boot();
         static::creating(function ($model) {
-            if ($model->incrementing == false) {
+            if ($model->incrementing == true) {
                 return;
             }
             if ($model->useUuid) {
                 $model->{$model->getKeyName()} = $model->generateUuid();
+                return;
             }
             if ($model->useUniqueId) {
                 $model->{$model->getKeyName()} = $model->generateUniqueId();
+                return;
             }
         });
     }
