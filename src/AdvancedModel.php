@@ -1,6 +1,6 @@
 <?php
 
-class BaseModel extends \Illuminate\Database\Eloquent\Model {
+class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
 
     public $incrementing = false;
     public $timestamps = true;
