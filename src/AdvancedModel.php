@@ -41,6 +41,10 @@ class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
             }
         });
     }
+    
+    public static function getTableName() {
+        return (new static)->getTable();
+    }
 
     private function generateUniqueId() {
         return date('YmdHis') . substr(explode(" ", microtime())[0], 2, 6);
