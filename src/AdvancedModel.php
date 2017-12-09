@@ -42,6 +42,17 @@ class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
         });
     }
     
+    public static function chunks($perChunk) {
+        $total = static::count();
+        $numChunks = ceil($total / $perChunk);
+        return $numChunks;
+    }
+    
+    public static function getConnName() {
+        $o = new static;
+        return $o->connection;
+    }
+    
     public static function getTableName() {
         return (new static)->getTable();
     }
