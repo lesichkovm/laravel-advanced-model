@@ -59,11 +59,30 @@ Add the following to your composer file:
 
 Extend your model classes
 
+- Human-friendly Unique ID (HUID)
+
 ```php
 class MyModel extends AdvancedModel {
-    private $useUniqueIds = true;
+    private $useUniqueId = true;
 }
 ```
+
+- Universally Unique ID (UUID)
+
+```php
+class MyModel extends AdvancedModel {
+    private $useUuid = true;
+}
+```
+
+- Autoincrements
+
+```php
+class MyModel extends AdvancedModel {
+    private $incrementing = true;
+}
+```
+
 
 ## Create Model and Retrieve ID ##
 
