@@ -1,7 +1,7 @@
 <?php
 
 class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
-
+    protected $primaryKey = 'Id';
     public $incrementing = false;
     public $timestamps = true;
     public $useUuid = false;
