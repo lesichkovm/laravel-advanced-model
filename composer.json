@@ -1,7 +1,6 @@
 {
     "name": "lesichkovm/laravel-advanced-model",
     "description": "Advanced model class for Laravel",
-    "version": "1.2.0",
     "type": "library",
     "keywords": ["model", "advanced", "laravel", "php", "lesichkov"],    
     "homepage": "http://github.com/lesichkovm/laravel-advanced-route",
