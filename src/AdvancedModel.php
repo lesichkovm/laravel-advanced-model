@@ -1,6 +1,7 @@
 <?php
 
 class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
+
     protected $primaryKey = 'Id';
     public $incrementing = false;
     public $timestamps = true;
@@ -36,23 +37,25 @@ class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
                 return;
             }
             if ($model->useUniqueId) {
-                $model->{$model->getKeyName()} = $model->generateUniqueId();
+                if (is_null($model->{$model->getKeyName()})) {
+                    $model->{$model->getKeyName()} = $model->generateUniqueId();
+                }
                 return;
             }
         });
     }
-    
+
     public static function chunks($perChunk) {
         $total = static::count();
         $numChunks = ceil($total / $perChunk);
         return $numChunks;
     }
-    
+
     public static function getConnName() {
         $o = new static;
         return $o->connection;
     }
-    
+
     public static function getTableName() {
         return (new static)->getTable();
     }
