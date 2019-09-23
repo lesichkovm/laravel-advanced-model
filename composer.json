@@ -17,6 +17,6 @@
         "files": ["src/AdvancedModel.php"]
     },
      "require": {
-        "Laravel/framework": "5.*"
+        "Laravel/framework": "5.*|6.*"
     }
 }
