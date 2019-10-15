@@ -17,6 +17,6 @@
         "files": ["src/AdvancedModel.php"]
     },
      "require": {
-        "Laravel/framework": "5.*|6.*"
+        "illuminate/database": "5.*|6.*"
     }
 }
