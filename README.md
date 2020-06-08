@@ -44,8 +44,8 @@ The HUIDs are less unique than UUIDs, but have more value for everyday usage:
   "base62" : "O225WNTn5DL",
   "base64" : "HVindzOeFOt",
   "base75" : "3hl}S8,t*rO",
-  "base100" : "kh7f8dz/Y8"
-  "crockford32" : "HFV66FXCA1XHQ",  
+  "base100" : "kh7f8dz/Y8",
+  "crockford32" : "HFV66FXCA1XHQ"  
 }
 ```
 
