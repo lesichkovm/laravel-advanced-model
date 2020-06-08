@@ -36,16 +36,16 @@ The HUIDs are less unique than UUIDs, but have more value for everyday usage:
 
 ```json
 {
-  "human-readable-form":"20170715-081335-698999",
-  "base10":"20170715081335698999",
-  "base16":"117ECC67F58A0F637",
-  "base32":"MDC4D43APZUIJ",
-  "base36":"498WXQXN91ET3",
-  "base62":"O225WNTn5DL",
-  "base64":"HVindzOeFOt",
-  "base75":"3hl}S8,t*rO",
-  "base100":"kh7f8dz/Y8"
-  "crockford32":"HFV66FXCA1XHQ",  
+  "human-readable-form" : "20170715-081335-698999",
+  "base10" : "20170715081335698999",
+  "base16" : "117ECC67F58A0F637",
+  "base32" : "MDC4D43APZUIJ",
+  "base36" : "498WXQXN91ET3",
+  "base62" : "O225WNTn5DL",
+  "base64" : "HVindzOeFOt",
+  "base75" : "3hl}S8,t*rO",
+  "base100" : "kh7f8dz/Y8"
+  "crockford32" : "HFV66FXCA1XHQ",  
 }
 ```
 
