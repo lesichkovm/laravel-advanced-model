@@ -51,18 +51,10 @@ The HUIDs are less unique than UUIDs, but have more value for everyday usage:
 
 ## Installation ##
 
-Add the following to your composer file:
+- Using composer
 
-```json
-   "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/lesichkovm/laravel-advanced-model.git"
-        }
-    ],
-    "require": {
-        "lesichkovm/laravel-advanced-model": "dev-master"
-    },
+```sh
+composer require lesichkovm/laravel-advanced-model
 ```
 
 ## Usage ##
