@@ -121,3 +121,16 @@ $instance->save();
 
 echo $instance->Id;
 ```
+
+
+## Additional Methods
+
+- chunks($perChunk)
+ 
+- getConnName
+ 
+- getTableName
+ 
+- trash
+ 
+- untrash
