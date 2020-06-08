@@ -69,10 +69,28 @@ Add the following to your composer file:
 
 Extend your model classes
 
+
+- Using AdvancedSnakeCaseModel
+
+```php
+class MyModel extends \AdvancedCamelCaseModel {
+    private $useUniqueId = true;
+}
+```
+
+- Using AdvancedCamelCaseModel
+
+```php
+class MyModel extends \AdvancedCamelCaseModel {
+    private $useUniqueId = true;
+}
+```
+
+
 - Human-friendly Unique ID (HUID)
 
 ```php
-class MyModel extends AdvancedModel {
+class MyModel extends \AdvancedSnakeCaseModel {
     private $useUniqueId = true;
 }
 ```
@@ -80,7 +98,7 @@ class MyModel extends AdvancedModel {
 - Universally Unique ID (UUID)
 
 ```php
-class MyModel extends AdvancedModel {
+class MyModel extends \AdvancedSnakeCaseModel {
     private $useUuid = true;
 }
 ```
@@ -88,7 +106,7 @@ class MyModel extends AdvancedModel {
 - Autoincrements
 
 ```php
-class MyModel extends AdvancedModel {
+class MyModel extends \AdvancedSnakeCaseModel {
     private $incrementing = true;
 }
 ```
@@ -96,6 +114,15 @@ class MyModel extends AdvancedModel {
 
 ## Create Model and Retrieve ID ##
 
+- Create snake case model instance and retrieve ID
+```php
+$instance = new MyModel;
+$instance->save();
+
+echo $instance->id;
+```
+
+- Create new camel case model instance and retrieve ID
 ```php
 $instance = new MyModel;
 $instance->save();
