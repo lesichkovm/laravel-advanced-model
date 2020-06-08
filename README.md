@@ -1,19 +1,28 @@
 # Laravel Advanced Model
-An advanced model for Laravel, with out-of-the-box support for CamelCase field names, and enhanced primary key support - human friendly date based unique IDs, and UUIDs.
+
+An advanced model for Laravel. Has out-of-the-box support for SnakeCase (Laravel's default), as well as for CamelCase field names, and enhanced primary key support - human friendly date based unique IDs, and UUIDs.
 
 ## Background ##
-1. By default Laravel uses snake_case field names for tables, which are not as readable, and few characters larger compared to UpperCamelCase (more at https://en.wikipedia.org/wiki/Camel_case).
 
-This class fixes this shortcoming, and the default is UpperCamelCase. This changes the default Laravel names to:
+1. Snake case (snake_case) advanced model. This is the default Laravel's model. This model uses the foillowing fields:
 
 ```
-id - Id
-created_at - CreatedAt
-updated_at - UpdatedAt
-deleted_at - DeletedAt
+id - Identity field
+created_at - When was the record created
+updated_at - When was the record last modified
+deleted_at - When was the record deleted (soft delete)
 ```
 
-2. The default Laravel model uses only incremental primary keys. Though it works for basic use cases, this causes extra effort for deduping records on larger systems. A much better option is to use unique IDs. This class supports UUIDs, as well as more human friendly unique unique IDs (HUID).
+2. Camel case (CamelCase). Camel case is more readable and a bit shorter than snake case (more at https://en.wikipedia.org/wiki/Camel_case). This model changes the default Laravel names to:
+
+```
+Id - Identity field
+CreatedAt - When was the record created
+UpdatedAt - When was the record last modified
+DeletedAt - When was the record deleted (soft delete)
+```
+
+3. The default Laravel model uses only incremental primary keys. Though it works for basic use cases, this causes extra effort for deduping records on larger systems. A much better option is to use unique IDs. This class supports UUIDs, as well as more human friendly unique unique IDs (HUID).
 
 ## Human-friendly Unique IDs (HUIDs) ##
 The Human-friendly unique IDs (HUIDs) are numeric strings consisting of the date and time with a random variable length postfix. The usual length is 20, but can be increased, if more uniqueness is required. Example: 20170715081335698999
