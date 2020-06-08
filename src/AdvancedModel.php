@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * This class is now deprecated.
+ * Use AdvancedCamelCaseModel or AdvancedSnakeCaseModel
+ * @deprecated 2020-06-08
+ */
 class AdvancedModel extends \Illuminate\Database\Eloquent\Model {
 
     protected $primaryKey = 'Id';
