@@ -65,7 +65,7 @@ Extend your model classes
 - Using AdvancedSnakeCaseModel
 
 ```php
-class MyModel extends \AdvancedCamelCaseModel {
+class MyModel extends \AdvancedSnakeCaseModel {
     private $useUniqueId = true;
 }
 ```
