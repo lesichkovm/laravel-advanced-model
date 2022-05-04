@@ -3,7 +3,7 @@
     "description": "Advanced model class for Laravel",
     "type": "library",
     "keywords": ["model", "advanced", "laravel", "php", "lesichkov"],    
-    "homepage": "http://github.com/lesichkovm/laravel-advanced-route",
+    "homepage": "http://github.com/lesichkovm/laravel-advanced-model",
     "license": "proprietary",
     "authors": [
         {
